@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.main{
+  background-color: #D7D7D7;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+  width: 750px;
+  height: 300px;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  display: flex;
+  border-radius: 5px;
+}
+
+.img-holder{
+  min-width: 350px;
+  height: 100%;
+  overflow: hidden;
+}
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  transition: transform 0.5s ease-in-out;
+}
+img:hover{
+  transform: scale(1.5);
+}
+.content{
+  padding: 25px 20px;
+  transition-property: transform;
+  animation-name: joes;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes joes {
+  from {
+    transform:translateX(-20px);
+  }
+
+  to {
+    transform: translateX(0px);
+  }
+}
+
+.title{
+  color:#66656a;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: underline;
+  text-underline-offset:5px;
+  text-decoration-color: #ecebf3;
+}
+
+.content h3{
+  color:#FF4E8A; 
+  margin-top:10px;
+  margin-bottom:20px;
+}
+
+.content p{
+  color:#7F7E84;
+  line-height: 25px;
+}
+
+.footer{
+  color:#66656a;
+  display: block;
+  margin-top: 20px;
+  height: 50px;
+  line-height: 50px;
+  border-top: 1px solid #ecebf3;
+}
